@@ -9,6 +9,15 @@
     </div>
 </div>
 <div class="row">
+  <div class="sample-menu-style dropdown-menu-content">
+    <span tabindex="0" onclick="return true">Click Me!</span>
+    <div tabindex="0" onclick="return true"></div>
+    <ul>
+      <li><a href="#" onclick="sampleMenu(this)">Item 1</a></li>
+      <li><a href="#" onclick="sampleMenu(this)">Item 2</a></li>
+      <li><a href="#" onclick="sampleMenu(this)">Last Item</a></li>
+    </ul>
+  </div>
     <div class="col-xs-12">
         <!-- <div class="dropdown" >
             <button
@@ -22,9 +31,10 @@
             </ul>
             </button>
         </div> -->
+
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown button
+              Dropdown button 1
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="#">Action</a></li>

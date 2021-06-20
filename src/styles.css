@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+.dropdown-menu-content {
+  position: relative;
+}
+
+.dropdown-menu-content > span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown-menu-content > span,
+.dropdown-menu-content > div {
+  cursor: pointer;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.dropdown-menu-content > div {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.dropdown-menu-content > span:focus ~ div {
+  display: block;
+}
+
+.dropdown-menu-content > ul {
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  transition: visibility 0.5s;
+  opacity: 0;
+}
+
+.dropdown-menu-content > span:focus ~ ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-menu-content ul{
+  list-style-type: none;
+}
+
+/* The .sample-menu-style below is for illustration purpose.
+   Feel free to use different style. */
+
+.sample-menu-style > span {
+  font: 120% Arial;
+  color: darkgreen;
+}
+
+.sample-menu-style > span:hover {
+  opacity: 0.75;
+}
+
+.sample-menu-style > ul {
+  padding: 0;
+  margin-top: 2px;
+}
+
+.sample-menu-style li {
+  box-shadow: 2px 2px 5px #ccc;
+  padding: 5px 10px;
+  height: 100%;
+  background: #fffffb;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.sample-menu-style li:not(:first-child) {
+  border-top: none;
+}
+
+.sample-menu-style li:hover {
+  background: #f8f8f4;
+}
+
+.sample-menu-style a {
+  text-decoration: none;
+  color: #555;
+}
