@@ -10,11 +10,5 @@ import {Component} from '@angular/core';
 )
 
 export class AppComponent{
- featureLoaded = 'recipe';
-  onNavigation(feature : string) {
-    this.featureLoaded = feature;
-  }
-
-
-
+ 
 }
