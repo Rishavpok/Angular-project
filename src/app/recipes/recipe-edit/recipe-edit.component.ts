@@ -26,7 +26,7 @@ recipeForm: FormGroup;
     )
   }
   onSubmit(){
-    console.log(this.recipeForm)
+    console.log(this.recipeForm.value);
   }
 
   private initForm(){
@@ -41,7 +41,7 @@ recipeForm: FormGroup;
      recipedescription = recipe.description
      console.log('name' + RecipeName)
     }
-  
+
    this.recipeForm = new FormGroup({
      'name': new FormControl(RecipeName),
      'imagePath' : new FormControl(RecipeimagePath),
